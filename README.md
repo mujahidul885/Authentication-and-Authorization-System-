@@ -49,7 +49,7 @@ EMS/
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/mujahidul885/Authentication-and-Authorization-System-.git
    cd EMS
    ```
 
