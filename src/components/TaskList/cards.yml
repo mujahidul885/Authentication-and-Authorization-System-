@@ -1,0 +1,131 @@
+import React from 'react'
+
+const Cards = () => {
+    const timeline = [
+  {
+    date: "2025-01-01",
+    title: "New Year's Day",
+    description: "Celebrated the start of the year with family and friends.",
+  },
+  {
+    date: "2025-01-15",
+    title: "Project Planning",
+    description: "Created roadmap and assigned initial tasks to team members.",
+  },
+  {
+    date: "2025-02-01",
+    title: "Design Phase",
+    description: "Finalized wireframes and visual prototypes for the platform.",
+  },
+  {
+    date: "2025-02-20",
+    title: "Backend Development",
+    description: "Started setting up the server, database, and RESTful APIs.",
+  },
+  {
+    date: "2025-03-01",
+    title: "Frontend Setup",
+    description: "React frontend project initialized with Tailwind CSS.",
+  },
+  {
+    date: "2025-03-10",
+    title: "Team Review",
+    description: "First sprint review and feedback session with the stakeholders.",
+  },
+  {
+    date: "2025-03-20",
+    title: "Authentication System",
+    description: "User login, registration, and JWT-based auth implemented.",
+  },
+  {
+    date: "2025-04-01",
+    title: "API Integration",
+    description: "Connected frontend to backend APIs using Axios.",
+  },
+  {
+    date: "2025-04-10",
+    title: "Testing Phase",
+    description: "Unit and integration tests conducted across all components.",
+  },
+  {
+    date: "2025-04-20",
+    title: "Bug Fixes",
+    description: "Resolved reported issues and optimized performance.",
+  },
+  {
+    date: "2025-05-01",
+    title: "Deployment",
+    description: "Deployed backend on Render and frontend on GitHub Pages.",
+  },
+  {
+    date: "2025-05-10",
+    title: "User Feedback",
+    description: "Collected feedback from early users and made improvements.",
+  },
+  {
+    date: "2025-05-20",
+    title: "Feature Update",
+    description: "Added new dashboard features and analytics tools.",
+  },
+  {
+    date: "2025-06-01",
+    title: "Marketing Launch",
+    description: "Launched the official marketing campaign on social media.",
+  },
+  {
+    date: "2025-06-15",
+    title: "Project Completion",
+    description: "Final version released and handed over to stakeholders.",
+  }
+];
+
+  return (
+    <>
+      <div className="flex flex-wrap gap-4">
+    {timeline.map((item, index) => (
+      <div
+        key={index}
+        className="flex-shrink-0 h-full w-[350px] bg-darkolive rounded-xl"
+      >
+        <img
+          className="rounded-2xl"
+          src="https://images.immediate.co.uk/production/volatile/sites/3/2024/05/How-many-Pokemon-are-there-6434211.jpg?quality=90&resize=980,654"
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h3 className="bg-red-600 mt-3 ml-3 text-sm px-3 py-1 rounded w-15">
+            High
+          </h3>
+          <h4 className="text-sm pt-4 pr-3">{item.date}</h4>
+        </div>
+        <h2 className="mt-7 ml-8 text-2xl font-semibold">{item.title}</h2>
+        <p className="mt-5 pl-7 pr-2">{item.description}</p>
+      </div>
+    ))}
+  </div>
+    </>
+  )
+}
+
+export default Cards
+
+
+
+
+
+
+
+
+<div>
+    {timeline.map((item,index)=>{
+        <div key={index} className='flex-shrink-0 h-full w-[350px] bg-darkolive rounded-xl'>
+        <img className='rounded-2xl' src="https://images.immediate.co.uk/production/volatile/sites/3/2024/05/How-many-Pokemon-are-there-6434211.jpg?quality=90&resize=980,654" alt="" />
+        <div className='flex justify-between'>
+            <h3 className='bg-red-600 mt-3 ml-3  text-sm px-3 py-1 rounded w-15 '>High</h3>
+        <h4 className='text-sm pt-4 pr-3'>{item.date}</h4>
+        </div>
+         <h2 className='mt-7 ml-8 text-2xl font-semibold'>{item.title}</h2>
+         <p className='mt-5 pl-7 pr-2 '>{item.description}</p>
+      </div>
+    })}
+      </div>
